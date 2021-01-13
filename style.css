@@ -1,0 +1,29 @@
+#logo{
+  width:300px;
+  height:300px;
+  margin: auto;
+}
+
+.page{
+  font-family: 'Bebas Neue', cursive;
+  background-color: black;
+  color: white;
+  min-height:600px;
+  padding:50px;
+}
+
+#home-buttons{
+  margin: 5px;
+}
+
+#home{
+  text-align: center;
+  margin:auto;
+}
+
+#home-content{
+  display: flex;
+  flex-direction:column;
+  /* justify-content: center; */
+  height: 200px;
+}
