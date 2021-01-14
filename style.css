@@ -6,9 +6,7 @@
 
 .page{
   font-family: 'Bebas Neue', cursive;
-  background-color: black;
   color: white;
-  min-height:600px;
   padding:50px;
 }
 
@@ -26,4 +24,8 @@
   flex-direction:column;
   /* justify-content: center; */
   height: 200px;
+}
+
+body{
+  background-color: black;
 }
