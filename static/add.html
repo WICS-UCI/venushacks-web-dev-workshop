@@ -4,32 +4,33 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
-	<title>repl.it</title>
+	<title>Netflix Binge Tracker</title>
 	<link href="style.css" rel="stylesheet" type="text/css" />
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>  
 </head>
 
 <body>
 	<div class="container-fluid page">
 		<h1>Log Binge Session</h1>
-		<form id="add-item" onSubmit="onSubmit()">
+		<form id="add-item" method="POST" action="/add">
 			<label for="title">Title of Show: </label>
-      <input type="text" id="title" class="form-control" required/>
+      <input type="text" class="form-control" name="name" required/>
       <br/>
       <label for="time">Time Watched: </label>
-      <input type = "number" id="time" class="form-control" required/>
+      <input type = "number" id="time" class="form-control" name="time" required/>
       <br/>
       <label for="genre">Genre: </label>
-      <select id="genre" class="form-control" required>
+      <select class="form-control" name="genre" required>
         <option value="romance">Romance</option>
         <option value="comedy">Comedy</option>
         <option value="mystery">Mystery</option>
 
       </select>
       <br/>
-      <input class="btn btn-success" type="submit" />
+      <input class="btn btn-success" type="submit"/>
     </form>
 
     <a href="index.html" class="btn btn-danger">Back</a>
