@@ -5,29 +5,44 @@
     <meta name="viewport" content="width=device-width">
 
     <title>Netflix Binge Tracker</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"/>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js"></script>
-      <link href="style.css" rel="stylesheet" type="text/css" />
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>  
+      
+  <!-- Link stylesheets here! -->
+  <!-- The order of the link tags is the order in which styles are applied -->
+  <!-- If you want to override Bootstrap styling, link your own stylesheet AFTER bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"/>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+
+  <!-- Import Google Fonts (https://fonts.google.com/) -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  
+
+
   </head>
   <body>
     <div class="container-fluid page" id="home">
       <h1>Welcome to my Netflix Binge Tracker</h1>
+
       <div id="home-content">
-      <img src="https://variety.com/wp-content/uploads/2020/05/netflix-logo.png" id="logo" class="img-thumbnail"/>
-      <br/>
-      <div id="home-buttons">
-        <a class="btn btn-danger home-btn" href="view.html">View All Binge Sessions</a>
-        <a class="btn btn-danger home-btn" href="add.html">Log Binge Session</a>
-      </div>
+        <img class="img-thumbnail" alt="Netflix logo" src="https://variety.com/wp-content/uploads/2020/05/netflix-logo.png" />
+        <br/>
+        <div id="home-buttons">
+          <!-- href attribute indicates what HTML page or external website to navigate to on click -->
+          <a class="btn btn-danger home-btn" href="view.html">View All Binge Sessions</a>
+          <a class="btn btn-danger home-btn" href="add.html">Log Binge Session</a>
+        </div>
       </div>
      
     </div>
 
     
-<script src="script.js"></script>
-  </body>
+	<!-- Place all script tags at the bottom of the body for best loading performance -->
+	<!-- Used to embed client side JavaScript -->
+  <script src="script.js"></script>
+  <!-- Import JavaScript libraries (used to connect to the backend) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>  
+
+</body>
 </html>
