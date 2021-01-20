@@ -17,7 +17,6 @@ def viewItems():
     client = pymongo.MongoClient("mongodb+srv://gayatrs:Bridge1!@cluster0.u03w3.mongodb.net/Netflix?retryWrites=true&w=majority")
     db = client["Netflix"]
     col = db['Logs']
-    # col.insert_one({'name': 'Avatar', 'time': '30', 'genre': 'romance'})
     log = list(col.find())
     return json_util.dumps(log)
 
