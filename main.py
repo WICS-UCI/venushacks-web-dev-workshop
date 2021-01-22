@@ -28,6 +28,5 @@ def addItems():
     col.insert_one({'name': request.form['name'], 'time': request.form['time'], 'genre': request.form['genre']})
     return app.send_static_file('view.html')
 
-# app.run(host="127.0.0.1")
 if __name__ == "__main__":
     app.run()
