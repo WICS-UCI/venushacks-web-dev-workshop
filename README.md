@@ -5,12 +5,9 @@ Learn the basics of building a basic end to end web application using HTML/CSS, 
 # Before this workshop please do the following: 
 - Clone this repository. The main branch is a starter template we created with various TODO comments that we will be covering during the workshop.
 - Install the following:
-    - Flask
-    bash```pip install flask```
-    - PyMongo (for MongoDB)
-    bash```pip install pymongo```
-    - BSON Library
-    bash```pip install python-bsonjs```
+    - Flask: ```pip install flask```
+    - PyMongo (for MongoDB): ```pip install pymongo```
+    - BSON Library: ```pip install python-bsonjs```
 
 # Additional Resources
 We will be covering a lot of material during the workshop and won't have time to go into depth on everything. So here are some links that will be helpful if you'd like to learn more and add to your web app. 
