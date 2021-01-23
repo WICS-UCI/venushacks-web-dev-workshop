@@ -3,6 +3,11 @@ body{
   background-color: black;
 }
 
+img{
+  width: 50%;
+  height: 50%;
+}
+
 /* Use . to select elements of a specific class */
 .page{
   /* When importing fonts (in this case Bebas Neue) from Google Fonts, be sure 
