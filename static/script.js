@@ -1,4 +1,4 @@
-// Javascript function
+// Javascript function getResult(): Grabs the log of entries from database to view
 function getResult() {
   // Uses AJAX to connect to the backend server
   $.ajax({
@@ -8,9 +8,16 @@ function getResult() {
       console.log("received result: " + result);
 
       // For each item in the list that is returned in the Python function, we add the equivalent table HTML string
-      // For each loop
+      // For each loop that applies the given function to each item in the list
+      /*
+        Example item:
+        {
+          name: "Avatar: The Last Airbender", 
+          genre: "Adventure",
+          time: 180
+        }
+      */
       $.each(JSON.parse(result), function(index, item){
-        console.log("added");
         // Appending HTML
         $('#result_table').append('<tr><td>' + item.name + '</td><td>' + item.genre + '</td><td>' + item.time + '</td></tr>');
       });
