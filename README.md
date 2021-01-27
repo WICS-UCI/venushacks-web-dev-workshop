@@ -38,8 +38,8 @@ We will be covering a lot of material during the workshop and won't have time to
   - Carousel: https://getbootstrap.com/docs/4.5/components/carousel/
   - Jumbotron: https://getbootstrap.com/docs/4.0/components/jumbotron/
   
+### PyMongo
+Documentation: https://pymongo.readthedocs.io/en/stable/tutorial.html
 
-
-
-
-
+### Python Flask
+Quickstart: https://pymongo.readthedocs.io/en/stable/tutorial.html
