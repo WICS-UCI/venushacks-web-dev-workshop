@@ -27,8 +27,7 @@ We will be covering a lot of material during the workshop and won't have time to
 - Google Fonts: https://fonts.google.com/
 
 ### Bootstrap
-- Homepage: https://getbootstrap.com/
-- Documentation: https://getbootstrap.com/docs/5.0/getting-started/introduction/
+- Documentation: https://getbootstrap.com/docs/4.6/getting-started/introduction/
 - Learn Bootstrap in 5 Minutes (Video): https://youtu.be/yalxT0PEx8c
 - Bootstrap CDN: https://www.bootstrapcdn.com/
 - Grid System: https://getbootstrap.com/docs/4.0/layout/grid/
