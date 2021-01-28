@@ -1,5 +1,6 @@
 # Intro to Web Dev Workshop
 ## By WICS Outreach
+Want to get started on your hackathon project but not sure where to start? 
 Learn the basics of building a basic end to end web application using HTML/CSS, JavaScript, Bootstrap, Python Flask, and MongoDB!
 
 # Before this workshop please do the following: 
