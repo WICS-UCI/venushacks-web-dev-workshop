@@ -1,6 +1,6 @@
 # Intro to Web Dev Workshop
 ## By WICS Outreach
-Want to get started on your hackathon project but not sure where to start? 
+Want to get started on your hackathon project but not sure where to start?  
 Learn the basics of building a basic end to end web application using HTML/CSS, JavaScript, Bootstrap, Python Flask, and MongoDB!
 
 # Before this workshop please do the following: 
@@ -26,6 +26,10 @@ We will be covering a lot of material during the workshop and won't have time to
 - Types of Selectors: https://www.w3schools.com/cssref/css_selectors.asp
 - Most Used CSS Properties: https://lucidar.me/en/web-dev-class/lesson-2-09-most-used-css-properties/
 - Google Fonts: https://fonts.google.com/
+
+### JavaScript
+- Intro to DOM Manipulation: https://www.w3schools.com/js/js_htmldom.asp
+- https://www.tutorialrepublic.com/javascript-tutorial/javascript-dom-manipulation.php
 
 ### Bootstrap
 - Documentation: https://getbootstrap.com/docs/4.6/getting-started/introduction/
