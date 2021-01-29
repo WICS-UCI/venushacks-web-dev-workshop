@@ -10,6 +10,7 @@ Learn the basics of building a basic end to end web application using HTML/CSS, 
     - PyMongo (for MongoDB): ```pip install pymongo```
     - BSON Library: ```pip install python-bsonjs```
     - DNS Mongo Helper: ```pip install dnspython```
+    - Python .env: ```pip install python-dotenv```
 
 # Additional Resources
 We will be covering a lot of material during the workshop and won't have time to go into depth on everything. So here are some links that will be helpful if you'd like to learn more and add to your web app. 
