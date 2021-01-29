@@ -6,11 +6,13 @@ Learn the basics of building a basic end to end web application using HTML/CSS, 
 # Before this workshop please do the following: 
 - Clone this repository. The main branch is a starter template we created with various TODO comments that we will be covering during the workshop.
 - Install the following libraries in Python by using pip in the command line of the project's directory. If you do not have pip installed, please see the following link for more help (https://pip.pypa.io/en/stable/installing/):
-    - Flask: ```pip install flask```
-    - PyMongo (for MongoDB): ```pip install pymongo```
-    - BSON Library: ```pip install python-bsonjs```
-    - DNS Mongo Helper: ```pip install dnspython```
-    - Python .env: ```pip install python-dotenv```
+    - Navigate to the hackuci2021-web-dev-workshop directory you just cloned, and run ``` pip install -r requirements.txt``` to install all dependencies.
+    - OR you can manually install each one: 
+        - Flask: ```pip install flask```
+        - PyMongo (for MongoDB): ```pip install pymongo```
+        - BSON Library: ```pip install python-bsonjs```
+        - DNS Mongo Helper: ```pip install dnspython```
+        - Python .env: ```pip install python-dotenv```
  - If you're having issues with imports or cloning, feel free to fork this Repl.it project which has the same starter template
     - It should automatically import everything you will need
     - You can create a Repl.it account with Google
