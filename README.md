@@ -3,7 +3,7 @@
 Want to get started on your hackathon project but not sure where to start?  
 Learn the basics of building a basic end to end web application using HTML/CSS, JavaScript, Bootstrap, Python Flask, and MongoDB!
 
-# Before this workshop please do the following: 
+# Setup: 
 - Clone this repository. The main branch is a starter template we created with various TODO comments that we will be covering during the workshop.
 - Install the following libraries in Python by using pip in the command line of the project's directory. If you do not have pip installed, please see the following link for more help (https://pip.pypa.io/en/stable/installing/):
     - Navigate to the hackuci2021-web-dev-workshop directory you just cloned, and run ``` pip install -r requirements.txt``` to install all dependencies.
