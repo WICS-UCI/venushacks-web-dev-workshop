@@ -11,6 +11,9 @@ Learn the basics of building a basic end to end web application using HTML/CSS, 
     - BSON Library: ```pip install python-bsonjs```
     - DNS Mongo Helper: ```pip install dnspython```
     - Python .env: ```pip install python-dotenv```
+ - If you're having issues with imports or cloning, feel free to fork this Repl.it project which has the same starter template
+    - You can create a Repl.it account with Google
+    - https://repl.it/@kaseychuang/Intro-To-Web-Dev-Starter-Template
 
 # Additional Resources
 We will be covering a lot of material during the workshop and won't have time to go into depth on everything. So here are some links that will be helpful if you'd like to learn more and add to your web app. 
