@@ -15,7 +15,7 @@ Learn the basics of building a basic end to end web application using HTML/CSS, 
         - Python .env: ```pip install python-dotenv```
  - If you're having issues with imports or cloning, feel free to fork this Repl.it project which has the same starter template
     - It should automatically import everything you will need
-    - You can create a Repl.it account with Google
+    - You must create a Repl.it account with Google and fork the project
     - https://repl.it/@kaseychuang/Intro-To-Web-Dev-Starter-Template
 
 # Additional Resources
