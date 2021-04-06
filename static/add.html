@@ -5,7 +5,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
 
-  <title>Netflix Binge Tracker</title>
+  <title>Expense Tracker</title>
   
   <!-- Link stylesheets here! -->
   <!-- The order of the link tags is the order in which styles are applied -->
@@ -14,32 +14,31 @@
   <link href="style.css" rel="stylesheet" type="text/css" />
 
   <!-- Import Google Fonts (https://fonts.google.com/) -->
-	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
 	<div class="container-fluid page">
-    <h1>Log Binge Session</h1>
+    <h1>Add Expense</h1>
 
     <!-- Add form that connects to the backend url 'add' (which is a POST method, so this si the information that is sent to the Python function) -->
 		<form id="add-log-form" method="POST" action="/add">
-      <label for="title">Title of Show / Movie: </label>
+      <label for="item">Item: </label>
       <!-- the 'name' attribute is what the variable is in Python -->
-      <input type="text" class="form-control" name="name" required/>
+      <input type="text" class="form-control" name="item" required/>
       <br/>
-      <label for="time">Time Watched (minutes): </label>
-      <input type = "number" id="time" class="form-control" name="time" required/>
+      <label for="amount">Amount (dollars):</label>
+      <input type = "number" id="amount" class="form-control" name="amount" required/>
       <br/>
 
       <!-- Dropdown -->
-      <label for="genre">Genre: </label>
-      <select class="form-control" name="genre" required>
+      <label for="category">Category: </label>
+      <select class="form-control" name="category" required>
         <!-- The value attribute indicates what is sent when the form is submitted -->
-        <option value="romance">Romance</option>
-        <option value="comedy">Comedy</option>
-        <option value="mystery">Mystery</option>
+        <option value="food">Food</option>
+        <option value="travel">Travel</option>
+        <option value="entertainment">Entertainment</option>
       </select>
       <br/>
 
