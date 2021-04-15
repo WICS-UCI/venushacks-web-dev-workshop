@@ -1,7 +1,7 @@
 # Intro to Web Dev Workshop
 ## By WICS Outreach
 Want to get started on your hackathon project but not sure where to start?  
-Learn the basics of building a basic end to end web application using HTML/CSS, JavaScript, Bootstrap, Python Flask, and MongoDB!
+Learn the basics of building a basic end to end web application using HTML/CSS, JavaScript, Bootstrap, and Python Flask!
 
 # Setup: 
 - Clone this repository. The main branch is a starter template we created with various TODO comments that we will be covering during the workshop.
@@ -9,10 +9,6 @@ Learn the basics of building a basic end to end web application using HTML/CSS, 
     - Navigate to the hackuci2021-web-dev-workshop directory you just cloned, and run ``` pip install -r requirements.txt``` to install all dependencies.
     - OR you can manually install each one: 
         - Flask: ```pip install flask```
-        - PyMongo (for MongoDB): ```pip install pymongo```
-        - BSON Library: ```pip install python-bsonjs```
-        - DNS Mongo Helper: ```pip install dnspython```
-        - Python .env: ```pip install python-dotenv```
  - If you're having issues with imports or cloning, feel free to fork this Repl.it project which has the same starter template
     - It should automatically import everything you will need
     - You must create a Repl.it account with Google and fork the project
@@ -49,9 +45,6 @@ We will be covering a lot of material during the workshop and won't have time to
   - Navbar: https://getbootstrap.com/docs/4.5/components/navbar/
   - Carousel: https://getbootstrap.com/docs/4.5/components/carousel/
   - Jumbotron: https://getbootstrap.com/docs/4.0/components/jumbotron/
-  
-### PyMongo
-Documentation: https://pymongo.readthedocs.io/en/stable/tutorial.html
 
 ### Python Flask
 Quickstart: https://pymongo.readthedocs.io/en/stable/tutorial.html
