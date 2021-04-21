@@ -9,9 +9,10 @@ import os
 # Creating Flask App object
 app = Flask(__name__,
            static_url_path='',
-           static_folder='static')\
+           static_folder='static')
 
 issue_tracker = []
+category = 'all'
 
 # Each method in the Flask app is tied to a url, which is wriiten using '@app.route()'
 @app.route('/')
@@ -19,16 +20,20 @@ def root():
     # Default an HTML page
     return app.send_static_file('index.html')
 
+@app.route('/viewcat', methods=['POST'])
+def changeCategory():
+    global category
+    category = request.form['cat']
+    return app.send_static_file('view.html')
+
 # Regular GET method (doesn't receive information, sends back information)
 @app.route('/view')
 def viewItems():
-    return json.dumps(issue_tracker)
-    # mongourl = os.getenv('MONGOURL')
-    # client = pymongo.MongoClient(mongourl)
-    # db = client["Netflix"]
-    # col = db['Logs']
-    # log = list(col.find())
-    # return json_util.dumps(log)
+    # print(request.form['cat'])
+    if category == 'all':
+        return json.dumps(issue_tracker)
+    else:
+        return json.dumps([i for i in issue_tracker if i['category'] == category])
 
 # POST method (receives information, sends back information)
 @app.route('/add', methods=['POST'])
