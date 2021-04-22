@@ -11,7 +11,7 @@
   <!-- The order of the link tags is the order in which styles are applied -->
   <!-- If you want to override Bootstrap styling, link your own stylesheet AFTER bootstrap -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"/>
-  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="../static/style.css" rel="stylesheet" type="text/css" />
 
   <!-- Import Google Fonts (https://fonts.google.com/) -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -22,8 +22,8 @@
 	<div class="container-fluid page">
     <h1>Add Expense</h1>
 
-    <!-- Add form that connects to the backend url 'add' (which is a POST method, so this si the information that is sent to the Python function) -->
-		<form id="add-log-form" method="POST" action="/add">
+    <!-- Add form that connects to the backend url 'add' (which is a POST method, so this is the information that is sent to the Python function) -->
+		<form id="add-form" method="POST" action="/add">
       <label for="item">Item: </label>
       <!-- the 'name' attribute is what the variable is in Python -->
       <input type="text" class="form-control" name="item" required/>
@@ -43,16 +43,13 @@
       <br/>
 
       <!-- Form buttons -->
-      <a id = "back-btn" href="index.html" class="btn btn-danger">Back</a>
+      <a id = "back-btn" href="/" class="btn btn-danger">Back</a>
       <input class="btn btn-success" type="submit"/> 
     </form>
 
   </div>
 
   <!-- Place all script tags at the bottom of the body -->
-  <!-- Used to embed client side JavaScript -->
-  <script src="script.js"></script>
-
   <!-- Import JavaScript libraries (used to connect to the backend) -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>  
 
