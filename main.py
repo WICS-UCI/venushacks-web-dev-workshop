@@ -14,34 +14,25 @@ def root():
     # Default an HTML page
     return render_template('index.html')
 
+# Render add expense page
 @app.route('/add-page')
 def add_page():
-    return render_template('add.html')
+    pass
 
-@app.route('/view-page')
-def view_page():
-    return render_template('view.html', category="all")
-
+# Render view page with specific category filter
 @app.route('/view-cat', methods=['POST'])
 def change_category():
-    category = request.form['cat']
-    return redirect('/view/' + category)
+    pass
     
 # Regular GET method (doesn't receive information, sends back information)
 @app.route('/view/<category>')
 def view(category):
-    if category == 'all':
-        data= expenses
-    else:
-        data =  [i for i in expenses if i['category'] == category]
-    return render_template('view.html', category=category, data=data)
+    pass
 
 # POST method (receives information, sends back information)
 @app.route('/add', methods=['POST'])
 def add_item():
-    item = {'item': request.form['item'], 'amount': request.form['amount'], 'category': request.form['category']}
-    expenses.append(item)
-    return redirect('view/all')
+    pass
 
 # Runs Flask App
 if __name__ == "__main__":

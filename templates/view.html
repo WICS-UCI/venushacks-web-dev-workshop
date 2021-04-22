@@ -24,15 +24,9 @@
 		<h1>My History</h1>
 		<!-- This is the table created in the view page -->
 		
-		<form method="POST" action="/view-cat">
-			<select id="view-form" class="form-control" name="cat" required onchange="this.form.submit()">
-				<!-- The value attribute indicates what is sent when the form is submitted -->
-				<option value = "" selected>Filter by category</option>
-				<option id="all-option" value="all">All</option>
-				<option id="food-option" value="food">Food</option>
-				<option id="travel-option" value="travel">Travel</option>
-				<option id="entertainment-option" value="entertainment">Entertainment</option>
-			</select>
+		<!-- TODO 1: Create filter dropdown -->
+		<form>
+			
 		</form>
 
 		<table class="table">
@@ -42,13 +36,9 @@
 			<!-- The <tbody> tag is what is connected to the Javascript function, so when HTML is added, it goes in here -->
 			<tbody id="result_table">
 				<!-- Generate a row for each item -->
-				{% for item in data %}
-				<tr>
-					<td>{{item["item"]}}</td>
-					<td>{{item["amount"]}}</td>
-					<td>{{item["category"]}}</td>
-				</tr>
-				{% endfor %}
+				<!-- TODO: Use Jinja2 to render data as rows in the table-->
+
+
 			</tbody>
 		</table>
 
