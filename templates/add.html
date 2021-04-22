@@ -5,57 +5,51 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
 
-  <title>Netflix Binge Tracker</title>
+  <title>Expense Tracker</title>
   
   <!-- Link stylesheets here! -->
   <!-- The order of the link tags is the order in which styles are applied -->
   <!-- If you want to override Bootstrap styling, link your own stylesheet AFTER bootstrap -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"/>
-  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="../static/style.css" rel="stylesheet" type="text/css" />
 
   <!-- Import Google Fonts (https://fonts.google.com/) -->
-	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
 	<div class="container-fluid page">
-    <h1>Log Binge Session</h1>
+    <h1>Add Expense</h1>
 
     <!-- Add form that connects to the backend url 'add' (which is a POST method, so this is the information that is sent to the Python function) -->
-    <!-- TODO #4: Add backend calls to form -->
-    <form id="add-log-form">
-      <label for="title">Title of Show / Movie: </label>
+		<form id="add-form" method="POST" action="/add">
+      <label for="item">Item: </label>
       <!-- the 'name' attribute is what the variable is in Python -->
-      <input type="text" class="form-control" name="name" required/>
+      <input type="text" class="form-control" name="item" required/>
       <br/>
-
-      <!-- TODO: #1: Create input for time watched and label -->
-
-      
+      <label for="amount">Amount (dollars):</label>
+      <input type = "number" id="amount" class="form-control" name="amount" required/>
       <br/>
 
       <!-- Dropdown -->
-      <label for="genre">Genre: </label>
-      <select class="form-control" required>
+      <label for="category">Category: </label>
+      <select class="form-control" name="category" required>
         <!-- The value attribute indicates what is sent when the form is submitted -->
-        <!-- TODO #2: Add option tags-->
-        
+        <option value="food">Food</option>
+        <option value="travel">Travel</option>
+        <option value="entertainment">Entertainment</option>
       </select>
       <br/>
 
-      <!-- TODO #3: Add Form buttons (back and submit) -->
-
-
+      <!-- Form buttons -->
+      <a id = "back-btn" href="/" class="btn btn-danger">Back</a>
+      <input class="btn btn-success" type="submit"/> 
     </form>
 
   </div>
 
   <!-- Place all script tags at the bottom of the body -->
-  <!-- Used to embed client side JavaScript -->
-  <script src="script.js"></script>
-
   <!-- Import JavaScript libraries (used to connect to the backend) -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>  
 
