@@ -25,10 +25,12 @@
 	<div class="container-fluid page">
 		<h1>My History</h1>
 		<!-- This is the table created in the view page -->
-		<form method="POST" action="/viewcat">
+		<h2>{{ ct }}</h2>
+		
+		
+		<form method="POST" action="/view">
 			<select id="view-form" class="form-control" name="cat" onchange="this.form.submit()">
 				<!-- The value attribute indicates what is sent when the form is submitted -->
-				<option value="blank"></option>
 				<option value="all">All</option>
 				<option value="food">Food</option>
 				<option value="travel">Travel</option>
@@ -45,7 +47,7 @@
 			</tbody>
 		</table>
 
-		<a href="index.html" class="btn btn-danger">Back</a>
+		<a href="/templates/index.html" class="btn btn-danger">Back</a>
 	</div>
 
 

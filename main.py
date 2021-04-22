@@ -1,15 +1,13 @@
 # Python Library Import
 #Flask App
-from flask import Flask, request
+from flask import Flask, request, render_template
 # JSON Parsing
 import json
 # ENV Import
 import os
 
 # Creating Flask App object
-app = Flask(__name__,
-           static_url_path='',
-           static_folder='static')
+app = Flask(__name__, template_folder="templates")
 
 issue_tracker = []
 category = 'all'
@@ -18,13 +16,13 @@ category = 'all'
 @app.route('/')
 def root():
     # Default an HTML page
-    return app.send_static_file('index.html')
+    return render_template('index.html')
 
 @app.route('/viewcat', methods=['POST'])
 def changeCategory():
     global category
     category = request.form['cat']
-    return app.send_static_file('view.html')
+    return render_template('view.html', ct=category)
 
 # Regular GET method (doesn't receive information, sends back information)
 @app.route('/view')
@@ -40,7 +38,7 @@ def viewItems():
 def addItems():
     item = {'item': request.form['item'], 'amount': request.form['amount'], 'category': request.form['category']}
     issue_tracker.append(item)
-    return app.send_static_file('view.html')
+    return render_template('view.html')
 
 # Runs Flask App
 if __name__ == "__main__":
