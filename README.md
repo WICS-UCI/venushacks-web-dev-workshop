@@ -2,6 +2,7 @@
 ## By WICS Outreach
 Want to get started on your hackathon project but not sure where to start?  
 Learn the basics of building a basic end to end web application using HTML/CSS, Bootstrap, and Python Flask!
+We will be creating a simple Expense Tracker website where a user can add items and view them by category.
 
 # Setup: 
 - Clone this repository. The main branch is a starter template we created with various TODO comments that we will be covering during the workshop.
